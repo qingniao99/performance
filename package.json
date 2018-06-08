@@ -1,0 +1,32 @@
+{
+  "name": "performance",
+  "version": "1.0.0",
+  "description": "Front-end performance tracking script",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingniao99/performance.git"
+  },
+  "keywords": [
+    "web",
+    "performance",
+    "monitor"
+  ],
+  "author": "qingniao99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qingniao99/performance/issues"
+  },
+  "homepage": "https://github.com/qingniao99/performance#readme",
+  "devDependencies": {
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  },
+  "dependencies": {
+    "fingerprintjs2": "^1.8.0",
+    "usertiming": "^0.1.8"
+  }
+}

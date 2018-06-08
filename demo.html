@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>performance-demo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <script type="text/javascript" src="./dist/performance.min.js"></script>
+<!-- <script type="text/javascript" src="./tcperformance.js" crossorigin></script> -->
+</head>
+<body>
+<a href="http://www.baidu.com"><img src="http://pic3.40017.cn/index/slide/2015/10/10/18/9aoONZ.jpg"></a>
+<script type="text/javascript">performance.mark('b')</script>
+<img src="http://img5.imgtn.bdimg.com/it/u=3580210867,3098509580&fm=21&gp=0.jpg">
+<img src="http://pic3.40017.cn/index/slide/2015/09/30/15/F23GLh.jpg">
+<script type="text/javascript">performance.mark('c');performance.measure('a','b','c')</script>
+</body>
+</html>
