@@ -2,17 +2,22 @@ const path = require('path');
 
 module.exports = {
   mode: "production",
-  entry: {"performance": "./src/performance.js","performanceFinger": "./src/performance.fingerprint.js"},
+  entry: {
+    "performance": "./src/performance.js",
+    "performanceCookie": "./src/performance.cookie.js",
+    "performanceFinger": "./src/performance.fingerprint.js",
+    "performanceAll": "./src/performance.all.js"
+  },
   output: {
+    library: 'fireTrack',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].min.js",
-    library: "fireTrack",
-    libraryTarget: "umd",
+    publicPath: './dist/',
+    filename: '[name].min.js'
   },
 
   module: {
-    rules: [
-    ]
+    rules: []
   },
 
   resolve: {
